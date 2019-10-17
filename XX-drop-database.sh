@@ -1,0 +1,10 @@
+#
+# Drop database
+#
+
+sqlplus SYS/$DB_PASSWORD as SYSDBA <<@
+    STARTUP FORCE MOUNT;
+    ALTER SYSTEM ENABLE RESTRICTED SESSION;
+    DROP DATABASE;
+    /
+@
