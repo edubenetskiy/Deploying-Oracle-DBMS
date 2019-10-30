@@ -1,8 +1,9 @@
-#!/bin/bash
+#!/bin/bash -x
 
 source ./10-env.sh
-source ./20-sys-auth.sh
-source ./30-init-file.sh
-source ./40-data-storage.sh
-source ./50-create-database.sh
-source ./60-create-tablespaces.sh
+
+./20-sys-auth.sh
+./30-init-file.sh
+./40-data-storage.sh
+./50-create-database.sh
+./60-create-tablespaces.sh
