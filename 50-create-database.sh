@@ -6,7 +6,9 @@ sqlfile='50-create-database.sql'
 
 cat >$sqlfile <<@
     CREATE SPFILE FROM PFILE;
+
     STARTUP NOMOUNT;
+
     CREATE DATABASE $DB_NAME
         USER SYS IDENTIFIED BY $DB_PASSWORD
         USER SYSTEM IDENTIFIED BY $DB_PASSWORD
