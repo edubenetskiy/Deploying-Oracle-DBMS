@@ -2,7 +2,9 @@
 # Create database
 #
 
-sqlplus SYS/123456 as SYSDBA <<@
+sqlfile='50-create-database.sql'
+
+cat >$sqlfile <<@
     CONNECT SYS AS SYSDBA;
     CREATE SPFILE FROM PFILE;
     STARTUP NOMOUNT;
@@ -23,3 +25,5 @@ sqlplus SYS/123456 as SYSDBA <<@
     /
     EXIT
 @
+
+sqlplus SYS/123456 as SYSDBA @ $sqlfile
