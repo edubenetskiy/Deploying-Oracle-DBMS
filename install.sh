@@ -7,3 +7,4 @@ source ./env.sh
 ./40-data-storage.sh
 ./50-create-database.sh
 ./60-create-tablespaces.sh
+./70-create-dict.sh
