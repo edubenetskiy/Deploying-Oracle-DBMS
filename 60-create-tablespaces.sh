@@ -23,7 +23,6 @@ cat >$sqlfile <<@
           '$ORADATA/$DB_NAME/node03/bestyellowmath01.dbf' SIZE 10M REUSE
         , '$ORADATA/$DB_NAME/node02/bestyellowmath02.dbf' SIZE 10M REUSE
         ;
-    /
 
     EXIT
 @
