@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-source ./10-env.sh
+source ./env.sh
 
 ./20-sys-auth.sh
 ./30-init-file.sh
