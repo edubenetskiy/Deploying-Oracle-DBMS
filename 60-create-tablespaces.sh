@@ -2,7 +2,9 @@
 # Create tablespaces
 #
 
-sqlplus SYS/123456 as SYSDBA <<@
+sqlfile='60-create-tablespaces.sql'
+
+cat >$sqlfile <<@
     CREATE TABLESPACE LAST_WHITE_MOM
         DATAFILE '$ORADATA/$DB_NAME/node02/lastwhitemom01.dbf' SIZE 10M,
         DATAFILE '$ORADATA/$DB_NAME/node02/lastwhitemom02.dbf' SIZE 10M,
@@ -19,3 +21,5 @@ sqlplus SYS/123456 as SYSDBA <<@
     /
     EXIT
 @
+
+sqlplus SYS/123456 as SYSDBA @ $sqlfile
