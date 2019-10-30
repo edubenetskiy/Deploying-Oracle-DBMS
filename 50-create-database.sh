@@ -27,4 +27,4 @@ cat >$sqlfile <<@
     EXIT
 @
 
-sqlplus SYS/123456 as SYSDBA @ $sqlfile
+sqlplus SYS/$DB_PASSWORD as SYSDBA @ $sqlfile

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sqlplus SYS/123456 as SYSDBA
+sqlplus SYS/$DB_PASSWORD as SYSDBA
