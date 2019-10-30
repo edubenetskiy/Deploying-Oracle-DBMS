@@ -23,7 +23,7 @@ cat >$sqlfile <<@
             DATAFILE '$ORADATA/$DB_NAME/undotbs01.dbf'
             SIZE 200M REUSE AUTOEXTEND ON NEXT 5120K MAXSIZE UNLIMITED
     ;
-    /
+
     EXIT
 @
 
