@@ -7,7 +7,7 @@
 export ORACLE_BASE=/u01/app/oracle
 export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/dbhome_1
 export ORACLE_SID=s225088
-export NLS_LANG=American_America.UTF8
+export NLS_LANG=RUSSIAN_CIS.AL32UTF8
 
 export ORADATA=/u01/avy64
 export DB_NAME=loudsoup
